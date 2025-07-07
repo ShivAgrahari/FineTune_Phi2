@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Fine-Tuning Phi-2 for Enhanced Storytelling
 
 This project provides a tutorial on **parameter-efficient fine-tuning (PEFT)** and **quantization** of the Phi-2 model to improve its storytelling capabilities.
@@ -11,11 +10,11 @@ Refer to the [Phi-2 model page](https://huggingface.co/microsoft/phi-2) and data
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Start by cloning the repository, setting up a conda environment, and installing the dependencies.
 
-> ✅ Tested with Python 3.9 and CUDA 11.7
+>  Tested with Python 3.9 and CUDA 11.7
 
 \`\`\`bash
 git clone https://github.com/ShivAgrahari/FineTune_Phi2.git
@@ -29,7 +28,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 The following dependencies are listed in \`requirements.txt\`:
 
@@ -45,7 +44,7 @@ transformers==4.31.0
 
 ---
 
-## 🛠️ Fine-Tuning the Model
+##  Fine-Tuning the Model
 
 To fine-tune the Phi-2 model on the \`tatsu-lab/alpaca\` dataset (or any dataset with similar instruction-output structure), run:
 
@@ -66,7 +65,7 @@ python Fine_Tuning_Phi2.py \\
 
 ---
 
-### 🧠 Notes
+###  Notes
 
 - The script uses **LoRA** for efficient fine-tuning and **4-bit quantization** to reduce memory usage.
 - Only the **LoRA parameters** are saved after training. These are loaded onto the base Phi-2 model for inference.
@@ -75,7 +74,7 @@ python Fine_Tuning_Phi2.py \\
 
 ---
 
-## 📊 Performance Evaluation
+##  Performance Evaluation
 
 The fine-tuning script includes evaluation using:
 
@@ -83,6 +82,8 @@ The fine-tuning script includes evaluation using:
 - **Cosine Similarity** (higher is better)
 
 ### Results:
+![image](https://github.com/user-attachments/assets/6e73bc32-88e1-4c98-8d62-ca07f8a5199b)
+
 
 | Metric              | Base Model | Fine-Tuned |
 |---------------------|------------|-------------|
@@ -91,16 +92,12 @@ The fine-tuning script includes evaluation using:
 
 This indicates improved output quality while retaining semantic intent.
 
-> 📈 A **bar plot** visualizing the perplexity comparison is generated using \`matplotlib\`.
 
 ---
 
-## ✅ Final Notes
+##  Final Notes
 
 To run the evaluation and inference:
 
 - Make sure the fine-tuned model is available **locally** or via the **Hugging Face Hub**.
 - Modify prompt inputs and generation parameters as needed to test storytelling capabilities.
-
----
-EOF
