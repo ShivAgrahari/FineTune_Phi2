@@ -1,4 +1,4 @@
-Fine-Tuning Documentation for Phi-2 Model
+Fine-Tuning for Phi-2 Model
 Purpose of Fine-Tuning
 The Phi-2 model, a Transformer-based model with 2.7 billion parameters, was fine-tuned to enhance its performance in generating coherent, contextually relevant, and concise responses, particularly for creative tasks such as storytelling. The fine-tuning process aimed to improve the model's ability to produce high-quality text in response to prompts like "Tell me a story about a brave warrior." The goal was to address limitations in the base model's output, which often exhibited verbosity, irrelevant text, and textbook-like responses due to its primary training on textbook data. By fine-tuning with the Alpaca dataset, the model was adapted to better handle creative and conversational prompts, improving its ability to generate engaging and focused narratives.
 Fine-Tuning Process
